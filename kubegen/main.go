@@ -27,6 +27,7 @@ For more details on each command, use the --help flag.`,
 	rootCmd.AddCommand(cmd.GenerateCmd)
 	rootCmd.AddCommand(cmd.ApplyCmd)
 	rootCmd.AddCommand(cmd.UpdateImageCmd)
+	rootCmd.AddCommand(cmd.DeleteCmd)
 
 	if err := rootCmd.Execute(); err != nil {
 		fmt.Println(err)
